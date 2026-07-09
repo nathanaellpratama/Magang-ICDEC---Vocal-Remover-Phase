@@ -10,18 +10,18 @@ nBandsBass      = 6;
 nBandsFormant   = 20;
 nBandsTreble    = 8;
 protectedBandHz     = 150;
-protectedRampBands  = 5;      % [v7] was 3
+protectedRampBands  = 5;      
 sigmaIPD   = 0.8;
 plvFloor   = 0.15;
 plvGamma   = 0.22;
-timeSmoothFrames = 11;        % [v7] was 9
+timeSmoothFrames = 11;        
 depth            = 0.95;
 vocalBoostLowHz  = 200;
 vocalBoostHighHz = 4000;
 vocalBoostFactor = 1.6;
 rampWidthHz      = 150;
 attackMs  = 20;
-releaseMs = 200;              % [v7] was 140
+releaseMs = 200;              
 fcDC = 15;
 corrLRWarnThresh   = 0.88;
 corrLRHardThresh   = 0.96;
@@ -45,7 +45,7 @@ gainFloorBase    = 0.0;
 gainFloorMono    = 0.15;
 postMedianFrames = 3;
 perBandRiskThresh   = 0.70;
-perBandRiskProtectMin  = 0.5;   % [v7] was flat perBandRiskProtect = 0.5
+perBandRiskProtectMin  = 0.5;   
 perBandRiskMinFrac  = 0.3;
 
 %% --- VERIFIKASI STEREO INPUT ---

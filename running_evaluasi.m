@@ -1,8 +1,6 @@
 clear; clc; close all;
 
-% =========================================================================
-% 1. PENGATURAN PATH (SESUAIKAN DENGAN LAPTOPMU)
-% =========================================================================
+% 1. PENGATURAN PATH
 % TULIS PATH KE FOLDER 'test' HASIL UNZIP KAMU DI SINI
 datasetPath = 'D:\Nathanael\Telkom University\Semester 6\Kerja Praktek\ICDEC\Vocal Remover Phase MATLAB\test'; 
 
@@ -22,9 +20,7 @@ SDR_results = zeros(numTracks, 1);
 SIR_results = zeros(numTracks, 1);
 SAR_results = zeros(numTracks, 1);
 
-% =========================================================================
 % 2. LOOP PROCESSING & EVALUASI
-% =========================================================================
 tic; % Mulai hitung waktu
 for i = 1:numTracks
     trackName = folders(i).name;
@@ -38,7 +34,6 @@ for i = 1:numTracks
     target_accompaniment = mix - vocals; 
 
     % c. Jalankan Algoritma Vocal Remover Fasa Milikmu
-    % Gantilah 'my_vocal_remover_offline' dengan nama fungsi kodemu yang sebenarnya
     estimated_accompaniment = metode3_v8_sar_tuning(mix, fs);
 
     % d. Sinkronisasi Panjang Sinyal (Antisipasi efek STFT/Windowing)
@@ -70,9 +65,7 @@ for i = 1:numTracks
 end
 waktu_total = toc;
 
-% =========================================================================
 % 3. REKAPITULASI HASIL AKHIR (STANDAR MEDIAN)
-% =========================================================================
 fprintf('\n==================================================\n');
 fprintf('           HASIL EVALUASI AKHIR (%d LAGU)         \n', numTracks);
 fprintf('==================================================\n');
