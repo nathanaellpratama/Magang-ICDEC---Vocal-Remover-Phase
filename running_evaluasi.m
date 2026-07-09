@@ -1,13 +1,13 @@
 clear; clc; close all;
 
 % 1. PENGATURAN PATH
-% TULIS PATH KE FOLDER 'test' HASIL UNZIP KAMU DI SINI
-datasetPath = 'D:\Nathanael\Telkom University\Semester 6\Kerja Praktek\ICDEC\Vocal Remover Phase MATLAB\test'; 
+% TULIS PATH KE FOLDER 'test' HASIL UNZIP
+datasetPath = 'E:\train'; 
 
 % Membaca semua sub-folder lagu
 folders = dir(datasetPath);
 folders = folders([folders.isdir] & ~ismember({folders.name}, {'.', '..'}));
-numTracks = 10;
+numTracks = 50;
 
 if numTracks == 0
     error('Folder test kosong atau path salah! Periksa kembali datasetPath kamu.');
