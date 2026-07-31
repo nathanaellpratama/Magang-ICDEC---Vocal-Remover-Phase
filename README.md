@@ -4,10 +4,6 @@ Algoritma vocal remover murni berbasis fasa (**phase-based**), dikembangkan seba
 
 Proyek ini merupakan bagian dari inisiatif **"New Audio Effect Exploration"**, dengan target akhir deployment pada chip DSP Polytron. Scope resmi KP adalah *modelling and software*, namun seluruh keputusan pengembangan diarahkan agar **chip-ready**: real-time capable, kompleksitas komputasi rendah, dan kompatibel dengan Simulink/code generation.
 
-- **Mahasiswa:** Nathanael — Teknik Komputer, Semester 6, Telkom University
-- **Pembimbing:** Ferriady
-- **Institusi Mitra:** ICDEC (Indonesia Chip Design Collaborative Center)
-
 ---
 
 ## Ringkasan Metode
